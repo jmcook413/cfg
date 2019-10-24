@@ -1,0 +1,9 @@
+[user]
+  name = jmcook413
+  email = jeremycook290@gmail.com
+[alias]
+  graph = log --oneline --decorate --graph --all
+  dc = diff --cached
+  ss = stash save -u
+[core]
+  editor = nvim

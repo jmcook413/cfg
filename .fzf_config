@@ -1,9 +1,6 @@
 # Using fzf with nvim
 function fv {
-  local choices=$(fzf --multi --preview "head -$LINES {}" --query="$1")
-  if [ "$choices" != "" ]; then
-    nvim $choices
-  fi
+  nvim $(fzf --multi --preview "head -$LINES {}" --query="$1")
 }
 
 # GIT heart FZF
